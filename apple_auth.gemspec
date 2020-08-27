@@ -26,6 +26,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
+  # Doc
+  spec.rdoc_options  = ["--main", "README.txt"]
+
   # Production dependencies
   spec.add_dependency 'jwt', '~> 2.2'
   spec.add_dependency 'oauth2', '~> 1.4'
@@ -35,6 +38,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'byebug', '~> 11.1'
   spec.add_development_dependency 'railties', '~> 6.0'
   spec.add_development_dependency 'rake', '~> 13.0'
+  spec.add_development_dependency 'rdoc', '~> 6.2'
   spec.add_development_dependency 'reek', '~> 5.6'
   spec.add_development_dependency 'rspec', '~> 3.9'
   spec.add_development_dependency 'rubocop', '~> 0.80'
